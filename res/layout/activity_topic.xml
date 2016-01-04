@@ -1,0 +1,23 @@
+<com.edaoyou.collections.topic.PullToRefreshView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pullView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <com.edaoyou.collections.topic.TouchCallbackLayout
+        android:id="@id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            android:layout_marginTop="@dimen/tabs_height" />
+
+        <include layout="@layout/activity_topic_header"/>
+    </com.edaoyou.collections.topic.TouchCallbackLayout>
+
+</com.edaoyou.collections.topic.PullToRefreshView>

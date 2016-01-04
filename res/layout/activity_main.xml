@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/tab_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/main_rg"
+        android:layout_width="match_parent"
+        android:layout_height="65dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="15dip" >
+
+        <RadioButton
+            android:id="@+id/home_rb"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:drawablePadding="3dip"
+            android:drawableTop="@drawable/home_rb_selector"
+            android:gravity="center"
+            android:paddingRight="25dip"
+            android:paddingTop="3dip"
+            android:singleLine="true"
+            android:text="首页"
+            android:textColor="@drawable/main_rb_text_color_selector"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/address_book_rb"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:drawablePadding="3dip"
+            android:drawableTop="@drawable/address_book_rb_selector"
+            android:gravity="center"
+            android:paddingLeft="25dip"
+            android:paddingTop="3dip"
+            android:singleLine="true"
+            android:text="通讯录"
+            android:textColor="@drawable/main_rb_text_color_selector"
+            android:textSize="12sp" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="8dip" >
+
+        <ImageButton
+            android:id="@+id/camera_ib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/camera_rb" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.edaoyou.collections.view.FloatingActionButton
+            android:id="@+id/main_toast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="56dp"
+            android:background="@drawable/main_toast_bg"
+            android:paddingBottom="12dip"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="@string/main_toast"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

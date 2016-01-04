@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <com.edaoyou.collections.view.CirclePortrait
+        android:id="@+id/chat_history_avatar_iv"
+        android:layout_width="45dip"
+        android:layout_height="45dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/search_persion_head"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/notification_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:layout_toRightOf="@id/chat_history_avatar_iv"
+        android:text="张三"
+        android:textColor="@color/blue_text_notif"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/notification_txt_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dip"
+        android:layout_toRightOf="@id/notification_name_tv"
+        android:text="关注了你"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/notification_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dip"
+        android:text="1天之前"
+        android:textColor="@color/gray_text"
+        android:textSize="13sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_toRightOf="@id/chat_history_avatar_iv"
+        android:background="@color/gray_line" />
+
+</RelativeLayout>

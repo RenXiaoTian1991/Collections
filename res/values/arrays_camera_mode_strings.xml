@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="camera_modes_strs">
+        <item>"自由"</item>
+        <item>"家具"</item>
+        <item>"书画"</item>
+        <item>"陶瓷"</item>
+        <item>"玉石"</item>
+        <item>"钱币"</item>
+        <item>"金铜"</item>
+        <item>"佛像"</item>
+        <item>"珠串"</item>
+    </string-array>
+    <!-- 自由模式 -->
+    <string-array name="freedom_str">
+        <item>@string/freedom_photo1</item>
+        <item>@string/freedom_photo2</item>
+        <item>@string/freedom_photo3</item>
+        <item>@string/freedom_photo4</item>
+    </string-array>
+    <!-- 家具 -->
+    <string-array name="chairs_str">
+        <item>@string/chair_photo1</item>
+        <item>@string/chair_photo2</item>
+        <item>@string/chair_photo3</item>
+        <item>@string/chair_photo4</item>
+    </string-array>
+    <!-- 书画 -->
+    <string-array name="pictures_str">
+        <item>@string/painting_photo1</item>
+        <item>@string/painting_photo2</item>
+        <item>@string/painting_photo3</item>
+        <item>@string/painting_photo4</item>
+    </string-array>
+    <!-- 陶瓷 -->
+    <string-array name="chinas_str">
+        <item>@string/ceramics_photo1</item>
+        <item>@string/ceramics_photo2</item>
+        <item>@string/ceramics_photo3</item>
+        <item>@string/ceramics_photo4</item>
+    </string-array>
+    <!-- 玉石 -->
+    <string-array name="jades_str">
+        <item>@string/bowlder_photo1</item>
+        <item>@string/bowlder_photo2</item>
+        <item>@string/bowlder_photo3</item>
+        <item>@string/bowlder_photo4</item>
+    </string-array>
+    <!-- 钱币 -->
+    <string-array name="moneys_str">
+        <item>@string/money_photo1</item>
+        <item>@string/money_photo2</item>
+        <item>@string/money_photo3</item>
+        <item>@string/money_photo4</item>
+    </string-array>
+    <!-- 金铜 -->
+    <string-array name="golds_str">
+        <item>@string/jade_photo1</item>
+        <item>@string/jade_photo2</item>
+        <item>@string/jade_photo3</item>
+        <item>@string/jade_photo4</item>
+    </string-array>
+    <!-- 佛像 -->
+    <string-array name="buddhas_str">
+        <item>@string/gold_photo1</item>
+        <item>@string/gold_photo2</item>
+        <item>@string/gold_photo3</item>
+        <item>@string/gold_photo4</item>
+    </string-array>
+    <!-- 珠串 -->
+    <string-array name="zhuchuans_str">
+        <item>@string/bowlder_photo1</item>
+        <item>@string/bowlder_photo2</item>
+        <item>@string/bowlder_photo3</item>
+        <item>@string/bowlder_photo4</item>
+    </string-array>
+
+</resources>

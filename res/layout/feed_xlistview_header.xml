@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/feed_header_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/feed_header_top_marign_top" >
+
+        <GridView
+            android:id="@+id/feed_like_gv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/feed_like_gridview_marign_left"
+            android:layout_marginRight="50dp"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="9"
+            android:scrollbars="none" >
+        </GridView>
+
+        <RelativeLayout
+            android:id="@+id/feed_header_like_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/feed_header_like_marign_right"
+            android:background="@drawable/kejian_choose_normal"
+            android:clickable="true"
+            android:padding="@dimen/feed_header_like_padding" >
+
+            <ImageView
+                android:id="@+id/feed_header_like_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/feed_header_like_marign"
+                android:background="@drawable/like_icon" />
+        </RelativeLayout>
+
+        <TextSwitcher
+            android:id="@+id/feed_header_like_count_ts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:visibility="gone"
+            android:layout_toLeftOf="@id/feed_header_like_rl"
+            android:background="@drawable/linlang_like_bg" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/feed_text_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/feed_header_top"
+        android:layout_marginLeft="@dimen/feed_text_marign_left"
+        android:textSize="@dimen/text_size_five" />
+
+</RelativeLayout>

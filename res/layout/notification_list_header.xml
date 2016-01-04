@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="70dp" >
+
+    <ImageView
+        android:id="@+id/notification_my_topics_avatar_iv"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/news_take_icon" />
+
+    <TextView
+        android:id="@+id/notification_my_topics_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:layout_toRightOf="@id/notification_my_topics_avatar_iv"
+        android:text="订阅"
+        android:textColor="@color/blue_text_title"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/notification_unread_msg_number"
+        android:layout_width="8dip"
+        android:layout_height="8dip"
+        android:layout_marginLeft="3dip"
+        android:layout_marginTop="5dip"
+        android:layout_toRightOf="@id/notification_my_topics_tv"
+        android:background="@drawable/dot_new_message"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/notification_my_topics_txt_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dip"
+        android:layout_toRightOf="@id/notification_unread_msg_number"
+        android:text="0条资讯"
+        android:textSize="13sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="10dip"
+        android:layout_toRightOf="@id/notification_my_topics_avatar_iv"
+        android:background="@color/gray_line" />
+
+</RelativeLayout>

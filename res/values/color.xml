@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">#00000000</color>
+    <color name="white">#fff</color>
+    <color name="black">#333</color>
+    <color name="gray_back">#ffeeeeee</color>
+    <!-- <color name="gray_tab">#fddd</color> -->
+    <color name="gray_text">#ff999999</color>
+    <color name="gray_line">#ffdddddd</color>
+    <color name="gray_tab_text">#f777</color>
+    <color name="gray_rb_text">#f444</color>
+    <color name="yello_back">#ffffdd44</color>
+    <color name="lucency">#0000</color>
+    <color name="red">#f00</color>
+    <color name="green">#0f0</color>
+    <color name="blue">#00f</color>
+    <color name="blue_text">#448aca</color>
+    <color name="blue_text_notif">#9AC0CD</color>
+    <color name="blue_text_title">#63B8FF</color>
+    <color name="light_blue">#44aac0</color>
+    <color name="title_color">#c1c1c1</color>
+    <color name="btn_yellow_color">#f79127</color>
+    <color name="btn_green">#3a8510</color>
+    <color name="light_green">#aaeeaa</color>
+    <color name="color_notifycation">#f72</color>
+    <color name="light_red">#f09640</color>
+    <color name="color_me_head">#e0b640</color>
+    <color name="color_me_head_select">#f0e640</color>
+    <color name="login_bt_normal">#272727</color>
+    <color name="login_bt_pressed">#000000</color>
+    <color name="regiester_bt_normal">#FF0000</color>
+    <color name="regiester_bt_pressed">#DC143C</color>
+    <color name="gray">#8B7D6B</color>
+
+    <!-- MainRadioButton -->
+    <color name="rb_text_select">#FF0000</color>
+    <color name="rb_text_default">#5E5E5E</color>
+    <color name="home_out">#EBEBEB</color>
+    <color name="province_line_border">#C7C7C7</color>
+    <color name="search_top_alpha_color">#6a6a6a6a</color>
+    <color name="search_top_color">#6a6a6a</color>
+    <color name="search_matching_color">#4bd169</color>
+    <color name="articles_top_background">#6aeaeaea</color>
+
+    <!-- 环信 -->
+    <color name="btn_gray_normal">#c0c0c0</color>
+    <color name="gray_normal">#666667</color>
+
+    <!-- feed -->
+    <color name="feed_bule">#3296d8</color>
+    <!-- 用户信息 -->
+    <color name="user_profile_bule">#2086c4</color>
+
+    <!-- topic -->
+    <color name="colorPrimary">#6570da</color>
+    <color name="colorPrimaryDark">#4b529c</color>
+    <!-- PagerSlidingTabStrip -->
+    <color name="tab_bg">#264199</color>
+    <color name="draw_bg">#1E3687</color>
+    <color name="tab_day_bg">#288EED</color>
+    <color name="draw_day_bg">#2583DA</color>
+    <color name="tab_night_bg">#183072</color>
+    <color name="draw_night_bg">#001064</color>
+    <color name="text_bg">#FFFFFF</color>
+    <color name="tab_dividing_line">#223A89</color>
+    <color name="tab_indicator">#cedaff</color>
+</resources>

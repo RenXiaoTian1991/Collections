@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dip"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/search_et"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dip"
+            android:layout_weight="9"
+            android:background="@drawable/edittext_shape"
+            android:drawableLeft="@drawable/ic_search"
+            android:hint="搜索"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:textSize="14dip" />
+
+        <TextView
+            android:id="@+id/search_cancel_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dip"
+            android:layout_weight="1"
+            android:text="取消"
+            android:textColor="#5da0fc" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <FrameLayout
+            android:id="@+id/search_main_fl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/search_load_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@android:color/black"
+            android:visibility="gone" >
+
+            <ProgressBar
+                android:id="@+id/search_load_pb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/search_load_pb"
+                android:text="@string/search_load"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

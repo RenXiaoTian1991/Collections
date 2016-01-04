@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.edaoyou.collections"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="13"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="getui.permission.GetuiService.com.edaoyou.collections" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 自定义权限 -->
+    <permission
+        android:name="getui.permission.GetuiService.com.edaoyou.collections"
+        android:protectionLevel="normal" >
+    </permission>
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <activity
+            android:name="com.edaoyou.collections.activity.WelcomeActivity"
+            android:configChanges="keyboardHidden"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.LoginAndRegiesterActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.MainActivity"
+            android:configChanges="keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.LoginActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.RegiesterStep1Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.RegiesterStep2Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.RegiesterStep3Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.ResetPasswordStep1Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.ResetPasswordStep2Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.PhotoGraphFurnitureActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.CustomCameraActivity"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.PublishPhotoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.SettingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.SettingUserActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.CropPortrait1Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.CropPortrait2Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.CustomCameraSimpleActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.PersonalFragmentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.ShowTakePhotoActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.ViewPagerShowPhotosActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.SelectCategoryActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.DescriptionActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.AddressActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.ScopeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.CameraPatternActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.PersonalHomepageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.PersonalFamousActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.PersonalSubscribeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.PersonalMyfansActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.PersonalAddfriendActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.AddfriendPhoneActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.ChatAndNotificationActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.SearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.topic.TopicActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.SearchMoreActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.FeedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.edaoyou.collections.activity.SearchResultActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.ShareFriendByPhoneActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.SettingPtotocolActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.SettingMyAttentionActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.SettingFeedMindActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.SetUserNameActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.LinLangActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.WebActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.FastRegiesterActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.SelectInterestActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.SetBackGroundActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.PersonalAttentionActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.SearchFriendActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.SettingAboutCollActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.ChatActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.LikeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.EmailRegiesterActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.SettingPushMsgActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.MyTopicActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.edaoyou.collections.activity.MyTopicsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 微信 start -->
+        <activity
+            android:name="com.edaoyou.collections.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 微信 end -->
+
+
+        <!-- QQ start -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1103949258" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- QQ end -->
+
+
+        <!-- 微博 start -->
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+
+        <service
+            android:name="com.sina.weibo.sdk.net.DownloadService"
+            android:exported="false" >
+        </service>
+        <!-- 微博 end -->
+
+
+        <!-- 环信 start -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="edaoyou#sandbox" />
+
+        <service android:name="com.easemob.chat.EMChatService" />
+        <!-- 环信 end -->
+
+
+        <!-- 个推SDK配置开始 -->
+        <!-- 配置第三方应用参数属性 -->
+        <meta-data
+            android:name="PUSH_APPID"
+            android:value="fhIWJafC2R6IaJQpF2zZP6" /> <!-- 替换为第三方应用的APPID -->
+        <meta-data
+            android:name="PUSH_APPKEY"
+            android:value="FJVke49Ndz5l9WLDWA91e7" /> <!-- 替换为第三方应用的APPKEY -->
+        <meta-data
+            android:name="PUSH_APPSECRET"
+            android:value="bv1BSD9rah6lrAsPFRJRh3" /> <!-- 替换为第三方应用的APPSECRET -->
+        <meta-data
+            android:name="PUSH_GROUPID"
+            android:value="" />
+        <!-- 配置SDK核心服务 -->
+        <service
+            android:name="com.igexin.sdk.PushService"
+            android:exported="true"
+            android:label="NotificationCenter"
+            android:process=":pushservice" >
+        </service>
+
+        <receiver android:name="com.igexin.sdk.PushReceiver" >
+    
+            <intent-filter>
+        
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+        
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+        
+                <action android:name="android.intent.action.USER_PRESENT" />
+        
+                <action android:name="com.igexin.sdk.action.refreshls" />
+    
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.igexin.sdk.PushManagerReceiver"
+            android:exported="false" >
+        
+            <intent-filter>
+            
+                <action android:name="com.igexin.sdk.action.pushmanager" />
+        
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.igexin.sdk.PushActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:process=":pushservice"
+            android:taskAffinity="com.igexin.sdk.PushActivityTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <!-- 配置弹框activity -->
+        <activity
+            android:name="com.igexin.getuiext.activity.GetuiExtActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:process=":pushservice"
+            android:taskAffinity="android.task.myServicetask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <receiver
+            android:name="com.igexin.getuiext.service.PayloadReceiver"
+            android:exported="false" >
+    
+            <intent-filter>
+        
+                <!-- 这个com.igexin.sdk.action.7fjUl2Z3LH6xYy7NQK4ni4固定，不能修改 -->
+        
+                <action android:name="com.igexin.sdk.action.7fjUl2Z3LH6xYy7NQK4ni4" />
+        
+                <!-- 替换为android:name="com.igexin.sdk.action.第三方的appId" -->
+        
+                <action android:name="com.igexin.sdk.action.fhIWJafC2R6IaJQpF2zZP6" />
+    
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.igexin.getuiext.service.GetuiExtService"
+            android:process=":pushservice" />
+        <!-- 个推download模块配置 -->
+        <service
+            android:name="com.igexin.download.DownloadService"
+            android:process=":pushservice" />
+
+        <receiver android:name="com.igexin.download.DownloadReceiver" >
+        
+            <intent-filter>
+            
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+        
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.igexin.download.DownloadProvider"
+            android:authorities="downloads.com.edaoyou.collections"
+            android:process=":pushservice" /> <!-- 替换为downloads.第三方包名 -->
+        <!-- 个推SDK配置 End -->
+
+    </application>
+
+</manifest>

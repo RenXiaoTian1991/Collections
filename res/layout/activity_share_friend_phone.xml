@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/shared_friend_lr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#F2F1F1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="通讯录朋友"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/famous_item_ll"
+        android:layout_width="match_parent"
+        android:layout_height="67dip"
+        android:layout_below="@+id/shared_friend_lr"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:padding="2dip" >
+
+        <ImageView
+            android:id="@+id/friend_header_iv"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_marginLeft="15dip"
+            android:background="@drawable/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dip"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/friend_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:paddingBottom="8dip"
+                android:text="刘飞"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/friend_number_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:paddingLeft="10dip"
+                android:text="15555555555"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/set_name_tv"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/famous_item_ll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/uploading_1"
+        android:gravity="center"
+        android:padding="2dip"
+        android:text="对方还未开通藏家账号"
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/call_phone_friend_tv"
+        android:layout_width="280dip"
+        android:layout_height="36dip"
+        android:layout_below="@+id/set_name_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/uploading_2"
+        android:gravity="center"
+        android:text="打电话给对方"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+</RelativeLayout>

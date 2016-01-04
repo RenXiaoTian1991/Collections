@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_and_regiester_bg"
+    android:padding="15dip" >
+
+    <RelativeLayout
+        android:id="@+id/regiester_step2_title_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/regiester_step2_back_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:visibility="invisible"
+            android:background="@drawable/back" />
+
+        <ImageView
+            android:id="@+id/regiester_step2_second_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/dot_light" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/regiester_step2_second_iv"
+            android:background="@drawable/dot_light" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_toRightOf="@id/regiester_step2_second_iv"
+            android:background="@drawable/small_ok_grey" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/regiester_head_iv"
+        android:layout_width="70dip"
+        android:layout_height="70dip"
+        android:layout_below="@id/regiester_step2_title_rl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dip" />
+
+    <LinearLayout
+        android:id="@+id/regiester_input_nickname_rl"
+        android:layout_width="260dip"
+        android:layout_height="40dip"
+        android:layout_below="@id/regiester_head_iv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dip"
+        android:background="@drawable/import_case"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip" >
+
+        <EditText
+            android:id="@+id/regiester_input_nickname_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="昵称"
+            android:textColorHint="@color/white" />
+
+        <ImageView
+            android:id="@+id/regiester_nickname_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:background="@drawable/small_ok_light"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/regiester_input_name_rl"
+        android:layout_width="260dip"
+        android:layout_height="40dip"
+        android:layout_below="@id/regiester_input_nickname_rl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/import_case"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip" >
+
+        <EditText
+            android:id="@+id/regiester_input_name_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入手机号或邮箱"
+            android:textColorHint="@color/white" />
+
+        <ImageView
+            android:id="@+id/regiester_name_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:background="@drawable/small_ok_light"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/regiester_input_pwd_rl"
+        android:layout_width="260dip"
+        android:layout_height="40dip"
+        android:layout_below="@id/regiester_input_name_rl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/import_case"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip" >
+
+        <EditText
+            android:id="@+id/regiester_input_pwd_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请设置密码"
+            android:inputType="textPassword"
+            android:textColorHint="@color/white" />
+
+        <ImageView
+            android:id="@+id/regiester_pwd_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:background="@drawable/small_ok_light"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/regiester_bt"
+        android:layout_width="260dip"
+        android:layout_height="40dip"
+        android:layout_below="@id/regiester_input_pwd_rl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/regiester_bt_select"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="创建账户"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip" >
+
+    <com.edaoyou.collections.view.CirclePortrait
+        android:id="@+id/adapter_search_friend_iv"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_gravity="center_vertical"
+        android:scaleType="fitXY"
+        android:src="@drawable/touxiangbackground" />
+
+    <TextView
+        android:id="@+id/adapter_search_friend_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:layout_toLeftOf="@+id/adapter_search_friend_like"
+        android:layout_toRightOf="@id/adapter_search_friend_iv"
+        android:text="藏家"
+        android:textColor="#5da0fc"
+        android:textSize="15sp" />
+
+    <ImageButton
+        android:id="@id/adapter_search_friend_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/personal_ok" />
+
+</RelativeLayout>

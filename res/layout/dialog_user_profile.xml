@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fillet="http://schemas.android.com/apk/res/com.edaoyou.collections"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+
+    <RelativeLayout
+        android:id="@+id/user_profile_cover_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/user_profile_cover_height" >
+
+        <com.edaoyou.collections.view.FilletLayout
+            android:id="@+id/user_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            fillet:draw_left_down="false"
+            fillet:draw_right_down="false"
+            fillet:fillet_height="@dimen/user_profile_fillet_height"
+            fillet:fillet_width="@dimen/user_profile_fillet_width" />
+
+        <com.edaoyou.collections.view.FilletLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/data_shadow"
+            fillet:draw_left_down="false"
+            fillet:draw_right_down="false"
+            fillet:fillet_height="@dimen/user_profile_fillet_height"
+            fillet:fillet_width="@dimen/user_profile_fillet_width" />
+
+        <RelativeLayout
+            android:id="@+id/user_profile_followed_ok_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/user_profile_followed_marign_right"
+            android:layout_marginTop="@dimen/user_profile_followed_marign_top"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/user_profile_followed_ok_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/data_add" />
+
+            <TextView
+                android:id="@+id/user_profile_followed_ok_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/user_profile_followed_ok_iv"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_six" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/user_profile_followed_no_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/user_profile_followed_marign_right"
+            android:layout_marginTop="@dimen/user_profile_followed_marign_top"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/user_profile_followed_no_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/data_ok" />
+
+            <TextView
+                android:id="@+id/user_profile_followed_no_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/user_profile_followed_no_iv"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_six" />
+        </RelativeLayout>
+
+        <com.edaoyou.collections.view.CirclePortrait
+            android:id="@+id/user_profile_icon_iv"
+            android:layout_width="@dimen/user_profile_icon_width"
+            android:layout_height="@dimen/user_profile_icon_height"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/user_profile_icon_marign_top"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/user_profile_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_profile_icon_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/user_profile_name_marign_top"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_four" />
+
+        <TextView
+            android:id="@+id/user_gender_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_profile_name_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/user_gender_marign_top"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_six" />
+
+        <Button
+            android:id="@+id/user_home_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_gender_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/user_home_marign_top"
+            android:background="@drawable/data_button"
+            android:text="@string/user_home"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_six" />
+    </RelativeLayout>
+
+    <com.edaoyou.collections.view.FilletLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_profile_cover_rl"
+        android:background="@drawable/data_bg"
+        fillet:draw_left_up="false"
+        fillet:draw_right_up="false"
+        fillet:fillet_height="@dimen/user_profile_fillet_height"
+        fillet:fillet_width="@dimen/user_profile_fillet_width" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/user_profile_tag_scroll_marign_top"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/user_profile_tag1_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/user_profile_tag_marign_left"
+                        android:text="@string/user_profile_tag"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_five" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/user_profile_tag2_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </com.edaoyou.collections.view.FilletLayout>
+
+</RelativeLayout>

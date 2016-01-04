@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="@string/setting_pushmsg"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/setting_pushmsg_swicth"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_margin="3dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="1dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="20dip"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:text="@string/setting_pushmsg"
+            android:textSize="16sp" />
+
+        <com.edaoyou.collections.view.CustomSwitchButton
+            xmlns:switch="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/setting_pushmsg_csbnt"
+            android:layout_width="wrap_content"
+            android:layout_height="20dip"
+            android:layout_margin="10dp"
+            switch:bmHeight="3000dp"
+            switch:bmWidth="50dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setting_setchat_ll"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_margin="3dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="1dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="20dip"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:text="@string/setting_pushmsg_time"
+            android:textSize="16sp" />
+
+        <com.edaoyou.collections.view.CustomSwitchButton
+            xmlns:switch="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/setting_pushmsg_time_csbnt"
+            android:layout_width="wrap_content"
+            android:layout_height="20dip"
+            android:layout_margin="10dp"
+            switch:bmHeight="3000dp"
+            switch:bmWidth="50dp" />
+    </LinearLayout>
+
+</LinearLayout>

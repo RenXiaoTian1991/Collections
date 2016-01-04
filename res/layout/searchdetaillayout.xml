@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <SearchView
+        android:id="@+id/searchview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:iconifiedByDefault="false"
+        android:imeOptions="actionSearch"
+        android:inputType="textCapWords"
+        android:queryHint="请输入你要查找的内容" >
+    </SearchView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/searchview"
+        android:background="#8d8d8d" >
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/searchview"
+        android:background="@color/gray_back" >
+
+        <LinearLayout
+            android:id="@+id/lv_disp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal" >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:src="@drawable/jilu" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:src="@drawable/mingjia" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:src="@drawable/wujiaoxing" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_disp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lv_disp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="您可以搜索到聊天记录、公公号和相关文章"
+            android:textColor="#66000000" />
+
+        <!--
+             <com.handmark.pulltorefresh.library.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/searchdetail_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="#19000000"
+            android:dividerHeight="1dp"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="true"
+            android:footerDividersEnabled="true"
+            android:headerDividersEnabled="true"
+            android:smoothScrollbar="true"
+            android:visibility="gone"
+            ptr:ptrAnimationStyle="flip"
+            ptr:ptrHeaderBackground="#dddddd"
+            ptr:ptrHeaderSubTextColor="#000000"
+            ptr:ptrHeaderTextColor="#000000"
+            ptr:ptrListViewExtrasEnabled="true"
+            ptr:ptrMode="both"
+            ptr:ptrScrollingWhileRefreshingEnabled="true"
+            ptr:ptrShowIndicator="false" >
+        </com.handmark.pulltorefresh.library.PullToRefreshListView>
+        -->
+
+        <ListView
+            android:id="@+id/searchdetail_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>

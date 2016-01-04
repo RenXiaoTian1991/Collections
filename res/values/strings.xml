@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 注册模块 -->
+    <string name="selectGender">请选择性别</string>
+    <string name="selectLocation">请选择所在地</string>
+    <string name="mustwrite">必填</string>
+    <string name="registMobile">手机：</string>
+    <string name="registPassword">密码：</string>
+    <string name="registPasswordHint">至少8个字符</string>
+    <string name="registEmail">电子邮箱：</string>
+    <string name="mobileregistEmailHint">example@abc.com 选填</string>
+    <string name="emailregistEmailHint">example@abc.com </string>
+    <string name="passworddefination">#C5C4C4</string>
+    <string name="passwordDefinition">为保护您的账号安全,请勿设置过于简单的密码 app不会在任何地方泄漏您的手机号码</string>
+    <string name="friendlyinfo">注册即表示同意</string>
+    <!--  -->
+    <string name="network_isnot_available">网络不可用</string>
+    <string name="app_name">藏家</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="tab_home">首页</string>
+    <string name="tab_search">搜索</string>
+    <string name="tab_message">消息</string>
+    <string name="tab_mine">我的</string>
+    <string name="bt_Immediately_experience_GuideAvt">立即体验</string>
+    <string name="titlebar_gerenziliao">个人资料</string>
+    <string name="titlebar_quxiao">取消</string>
+    <string name="titlebar_xiayibu">下一步</string>
+    <string name="titlebar_fabu">发布</string>
+    <string name="titlebar_suozaiweizhi">所在位置</string>
+    <string name="titlebar_xuanzekejianfanwei">选择可见范围</string>
+    <!-- 首页上拉刷新下拉加载 -->
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_release_label">松开后刷新</string>
+    <string name="pull_to_refresh_refreshing_label">刷新\u2026</string>
+    <string name="pull_to_refresh_footer_release_label">松开后加载</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+    <string name="pull_to_refresh_footer_refreshing_label">加载中\u2026</string>
+    <string name="xgridview_header_last_time">最后加载时间：</string>
+    <!-- 获取 Token -->
+    <string name="weibosdk_demo_token_to_string_format_1">Token：%1$s \n有效期：%2$s</string>
+    <string name="weibosdk_demo_toast_auth_success">授权成功</string>
+    <string name="weibosdk_demo_toast_auth_failed">授权失败</string>
+    <string name="weibosdk_demo_toast_auth_canceled">取消授权</string>
+
+    <!-- rongwei.mei 拍照模块 -->
+    <string name="take_photo_success">拍照成功</string>
+    <string name="select_picture_mode">选择拍照模式</string>
+    <string name="take_pictures_of_teaching">拍照教学</string>
+    <string name="tag_photos">标签照片</string>
+    <string name="freedom_photo1">图1</string>
+    <string name="freedom_photo2">图2</string>
+    <string name="freedom_photo3">图3</string>
+    <string name="freedom_photo4">图4</string>
+    <string name="chair_photo1">整体</string>
+    <string name="chair_photo2">局部一</string>
+    <string name="chair_photo3">局部二</string>
+    <string name="chair_photo4">局部三</string>
+    <string name="painting_photo1">整体</string>
+    <string name="painting_photo2">印章</string>
+    <string name="painting_photo3">题字</string>
+    <string name="painting_photo4">局部</string>
+    <string name="ceramics_photo1">全景</string>
+    <string name="ceramics_photo2">局部一</string>
+    <string name="ceramics_photo3">局部二</string>
+    <string name="ceramics_photo4">底部</string>
+    <string name="bowlder_photo1">整体</string>
+    <string name="bowlder_photo2">局部一</string>
+    <string name="bowlder_photo3">局部二</string>
+    <string name="bowlder_photo4">局部三</string>
+    <string name="money_photo1">整体</string>
+    <string name="money_photo2">正面</string>
+    <string name="money_photo3">反面</string>
+    <string name="money_photo4">局部</string>
+    <string name="jade_photo1">整体</string>
+    <string name="jade_photo2">局部一</string>
+    <string name="jade_photo3">局部二</string>
+    <string name="jade_photo4">局部三</string>
+    <string name="gold_photo1">整体</string>
+    <string name="gold_photo2">局部一</string>
+    <string name="gold_photo3">局部二</string>
+    <string name="gold_photo4">底部</string>
+    <string name="photograph_delete">删除</string>
+    <string name="photograph_confirm">完成</string>
+    <string name="add_description">添加描述文字...</string>
+    <string name="useragreement">《用户协议》</string>
+    <string name="select_the_label">选择标签</string>
+    <string name="add_a_description">添加描述</string>
+    <string name="position">所在地</string>
+    <string name="the_visible_range">可见范围</string>
+    <string name="by_consulting">发起咨询</string>
+    <string name="collection_type">藏品类别</string>
+
+    <!-- rongwei.mei 个人主页模块 -->
+    <string name="border_top">Border Top</string>
+    <string name="border_bottom">Border Bottom</string>
+    <string name="image_url">Image Url</string>
+    <string name="rephotograph">重拍</string>
+    <string name="use_pic">使用照片</string>
+    <string name="cancel">取消</string>
+    <string name="ok">确定</string>
+    <string name="clear">清除</string>
+    <string name="never_con">尚未发表任何藏品</string>
+    <string name="account_setting">账户设置</string>
+    <string name="modify_the_nickname">修改昵称</string>
+    <string name="nickname">昵称</string>
+    <string name="gender">性别</string>
+    <string name="address">所在地</string>
+    <string name="profile">简介</string>
+    <string name="modify_the_picture">修改头像</string>
+    <string name="edit_profile">编辑简介</string>
+    <string name="account_binding">账号绑定</string>
+    <string name="push">消息推送</string>
+    <string name="about_collections">关于 “藏家”</string>
+    <string name="check_version">检查更新</string>
+    <string name="emali_collections">jia.cang@tcollections.com</string>
+    <string name="feedback">意见反馈</string>
+    <string name="user_agreement">用户协议</string>
+    <string name="photodetailshare">分享到</string>
+    <string name="main_toast">晒宝到藏家社区  \n让大家见识一下！</string>
+    <string name="fast_regiester1">快&#160;&#160;速&#160;&#160;注&#160;&#160;册</string>
+    <string name="fast_regiester2">快&#160;速&#160;注&#160;册</string>
+
+    <!--
+    <item name="tag1" type="id"></item>
+    <item name="tag2" type="id"></item>
+    <item name="tag3" type="id"></item>
+    <item name="tag4" type="id"></item>
+    <item name="tag5" type="id"></item>
+    <item name="tag6" type="id"></item>
+    <item name="tag7" type="id"></item>
+    <item name="tag8" type="id"></item>
+    <item name="tag9" type="id"></item>
+    <item name="tag10" type="id"></item>
+    <item name="tag11" type="id"></item>
+    <item name="tag12" type="id"></item>
+    -->
+    <!-- 搜索首页 -->
+    <string name="search_follow">我关注的人</string>
+    <string name="search_chat">聊天记录</string>
+    <string name="search_like">喜欢</string>
+    <string name="search_tag">相关标签</string>
+    <string name="search_user">相关用户</string>
+    <string name="search_articles">相关文章</string>
+    <string name="search_more_follow">查看更多我关注的人</string>
+    <string name="search_more_chat">查看更多聊天记录</string>
+    <string name="search_more_like">查看更多喜欢</string>
+    <string name="search_more_tag">查看更多相关标签</string>
+    <string name="search_more_user">查看更多相关用户</string>
+    <string name="search_more_articles">查看更多相关文章</string>
+    <string name="search_come_form">来自&#160;&#160;%1$s</string>
+    <string name="search_key_null">搜索内容为空</string>
+    <string name="search_load">搜索中\u2026</string>
+    <string name="search_et_hint">搜索相关内容</string>
+    <string name="search_no_data">未找到结果</string>
+    <string name="chat_hint_title">提示</string>
+    <string name="chat_hint_txt">你不能和自己进行私聊</string>
+    <string name="chat_hint_txt_no_login">抱歉，您还没有登录，暂不能私聊</string>
+    <string name="chat_hint_btn">知道了</string>
+
+    <!-- 活动 -->
+    <string name="articles_title">活动</string>
+    <string name="articles_load">加载中\u2026</string>
+
+    <!-- 环信 -->
+    <string name="move_up_to_cancel">手指上滑，取消发送</string>
+    <string name="release_to_cancel">松开手指，取消发送</string>
+    <string name="recoding_fail">录音失败，请重试！</string>
+    <string name="Recording_without_permission">无录音权限</string>
+    <string name="The_recording_time_is_too_short">录音时间太短</string>
+    <string name="send_failure_please">发送失败，请检测服务器是否连接</string>
+    <string name="text_ack_msg">已读</string>
+    <string name="text_delivered_msg">送达</string>
+    <string name="back">返回</string>
+    <string name="save">保存</string>
+    <string name="button_pushtotalk">按住说话</string>
+    <string name="button_send">发送</string>
+    <string name="attach_smile">表情</string>
+    <string name="attach_picture">图片</string>
+    <string name="attach_take_pic">拍照</string>
+    <string name="attach_location">位置</string>
+    <string name="attach_file">文件</string>
+
+    <!-- Fedd -->
+    <string name="feed_publish_hint">发表评论</string>
+    <string name="feed_report">举报</string>
+    <string name="no_data">没有数据了，亲</string>
+    <string name="feed_whether_delet_comment">是否删除评论？</string>
+    <string name="diff_time_day">%1$d天前</string>
+    <string name="diff_time_hour">%1$d小时前</string>
+    <string name="diff_time_min">%1$d分钟前</string>
+    <string name="diff_time_just">刚刚</string>
+
+    <!-- 用户信息 -->
+    <string name="user_home">个人主页</string>
+    <string name="user_profile_tag">共同标签：</string>
+    <string name="user_follwed_ok_success">关注成功</string>
+    <string name="user_follwed_no_success">取消关注</string>
+    <string name="user_follwed_ok_failure">关注失败</string>
+    <string name="user_follwed_no_failure">取消失败</string>
+
+    <!-- 账户设置 -->
+    <string name="setting_user">账户设置</string>
+    <string name="setting_username">账户名称</string>
+    <string name="setting_mytab">我的标签</string>
+    <string name="setting_pushmsg">消息推送</string>
+    <string name="setting_pushmsg_time">夜间防骚扰(23:00－8:00)</string>
+    <string name="setting_setchat">只允许我关注的和我私聊</string>
+    <string name="setting_savepicture">保存图片到相册</string>
+    <string name="setting_aboutcollections">关于藏家</string>
+    <string name="setting_updata_text">正在检测，请稍后...</string>
+    <string name="setting_clearcache">清除缓存</string>
+    <string name="setting_opinionback">意见反馈</string>
+    <string name="setting_introducetofriends">把藏家介绍给朋友</string>
+    <string name="setting_ptotocol">用户协议</string>
+    <string name="setting_quituser">退出登录</string>
+
+    <!-- 分享 -->
+    <string name="share_app">最具情怀的收藏类应用，提供专业的收藏资讯，权威的收藏知识，致力于打造最活跃的收藏社区...</string>
+    <string name="share_app2">了解收藏趋势 把握投资技巧2015 藏·家 陪您一起玩转收藏!</string>
+
+    <!-- 标签 -->
+    <string name="topic_host">热门</string>
+    <string name="topic_newest">最新</string>
+    <string name="topic_new">资讯</string>
+
+    <!-- topic -->
+    <string name="header_text">ViewpagerHeader\nLorem ipsum dolor sit amet, consectetur adipiscing elit</string>
+    <string name="empty_text">Empty</string>
+    <string name="tab_country">Country</string>
+    <string name="tab_continent">Continent</string>
+    <string name="tab_city">City</string>
+    <string name="tab_scroll_view">Scroll View</string>
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_release_label">松开后刷新</string>
+    <string name="pull_to_refresh_refreshing_label">正在刷新\u2026</string>
+    <string name="pull_to_refresh_footer_release_label">松开后加载</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+    <string name="pull_to_refresh_footer_refreshing_label">正在加载中\u2026</string>
+
+</resources>

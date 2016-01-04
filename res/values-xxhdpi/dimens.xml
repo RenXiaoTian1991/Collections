@@ -1,0 +1,6 @@
+<resources>
+
+    <!-- home精选首页文玩的图片高度 -->
+    <dimen name="home_jingxuan1">170dp</dimen>
+
+</resources>

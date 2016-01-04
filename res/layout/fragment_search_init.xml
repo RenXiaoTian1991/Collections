@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_init_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/search_persion_head_iv"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_centerInParent="true"
+            android:background="@drawable/search_persion_head"
+            android:scaleType="centerInside" />
+
+        <ImageView
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="35dip"
+            android:layout_toLeftOf="@+id/search_persion_head_iv"
+            android:background="@drawable/search_clock"
+            android:scaleType="centerInside" />
+
+        <ImageView
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_marginLeft="35dip"
+            android:layout_toRightOf="@+id/search_persion_head_iv"
+            android:background="@drawable/search_star"
+            android:scaleType="centerInside" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dip"
+        android:hint="你可以搜索到聊天纪录、公众号和相关文章" />
+
+</LinearLayout>

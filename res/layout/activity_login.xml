@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_and_regiester_bg" >
+
+    <Button
+        android:id="@+id/login_back_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="15dip"
+        android:visibility="invisible"
+        android:background="@drawable/back" />
+
+    <RelativeLayout
+        android:id="@+id/input_name_rl"
+        android:layout_width="260dip"
+        android:layout_height="40dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dip"
+        android:background="@drawable/import_case"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip" >
+
+        <EditText
+            android:id="@+id/input_name_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:hint="请输入手机号或邮箱"
+            android:textColorHint="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/input_pwd_rl"
+        android:layout_width="260dip"
+        android:layout_height="40dip"
+        android:layout_below="@id/input_name_rl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/import_case"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip" >
+
+        <EditText
+            android:id="@+id/input_pwd_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:textColorHint="@color/white" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/login_bt"
+        android:layout_width="260dip"
+        android:layout_height="40dip"
+        android:layout_below="@id/input_pwd_rl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dip"
+        android:enabled="false"
+        android:background="@drawable/regiester_bt_select"
+        android:gravity="center"
+        android:text="登 录"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/forget_pwd_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/login_bt"
+        android:layout_below="@id/login_bt"
+        android:layout_marginTop="10dip"
+        android:text="忘记密码?"
+        android:textColor="@color/white"
+        android:textSize="13sp" />
+
+</RelativeLayout>

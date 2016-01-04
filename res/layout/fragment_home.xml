@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/home_title_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip" >
+
+        <RelativeLayout
+            android:id="@+id/home_message_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:id="@+id/home_message_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/home_message" />
+
+            <TextView
+                android:id="@+id/home_unread_msg_number"
+                android:layout_width="8dip"
+                android:layout_height="8dip"
+                android:layout_marginLeft="-4dip"
+                android:visibility="invisible"
+                android:layout_toRightOf="@id/home_message_iv"
+                android:background="@drawable/dot_new_message"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/home_choiceness_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/nav_highlighted"
+                android:gravity="center"
+                android:text="精选集"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/home_collection_friends_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/nav_normal"
+                android:gravity="center"
+                android:text="藏友圈"
+                android:textColor="#ff0000" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/home_search_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:src="@drawable/home_search" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/home_title_rl"
+        android:background="#aaaaaa" />
+
+    <com.etsy.XViewPager
+        android:id="@+id/home_vp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/line"
+        android:layout_gravity="center"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_and_regiester_bg"
+    android:padding="15dip" >
+
+    <RelativeLayout
+        android:id="@+id/regiester_step3_title_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/regiester_step3_back_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:visibility="invisible"
+            android:background="@drawable/back" />
+
+        <ImageView
+            android:id="@+id/regiester_step3_second_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/dot_light" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/regiester_step3_second_iv"
+            android:background="@drawable/dot_light" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_toRightOf="@id/regiester_step3_second_iv"
+            android:background="@drawable/small_ok_grey" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/regiester_input_sms_rl"
+        android:layout_width="260dip"
+        android:layout_height="40dip"
+        android:layout_below="@id/regiester_step3_title_rl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dip"
+        android:background="@drawable/import_case"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip" >
+
+        <EditText
+            android:id="@+id/regiester_input_sms_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="请输入验证码"
+            android:inputType="number"
+            android:textColorHint="@color/white" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/again_send_sms_bt"
+        android:layout_width="260dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/regiester_input_sms_rl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/login_bt_select"
+        android:enabled="false"
+        android:gravity="center"
+        android:paddingBottom="8dip"
+        android:paddingTop="8dip"
+        android:text="重新发送验证码"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/regiester_ok_bt"
+        android:layout_width="260dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/again_send_sms_bt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/regiester_bt_select"
+        android:gravity="center"
+        android:paddingBottom="8dip"
+        android:paddingTop="8dip"
+        android:text="确认"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</RelativeLayout>

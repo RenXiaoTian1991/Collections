@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/like_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dip" >
+
+        <ImageView
+            android:id="@+id/like_back_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/black_ruturn" />
+
+        <TextView
+            android:id="@+id/like_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/like_line_tv"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/like_title_layout"
+        android:background="#000000" />
+
+    <LinearLayout
+        android:id="@+id/like_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/like_line_tv"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/like_list_id"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1.0" >
+
+                <ImageView
+                    android:id="@+id/like_list_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/liebiao_highlighted" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1.0" >
+
+                <ImageView
+                    android:id="@+id/like_juzhen_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/juzhen_normal" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/like_red_line_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="3dp"
+            android:scaleType="matrix"
+            android:background="@color/red" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black" />
+      
+    </LinearLayout>
+   <com.etsy.XViewPager
+        android:id="@+id/like_vp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/like_tab_layout"
+        android:layout_gravity="center"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+</RelativeLayout>

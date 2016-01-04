@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="@dimen/search_top_or_more_min_height" >
+
+    <ImageView
+        android:id="@+id/search_more_search_icon_iv"
+        android:layout_width="@dimen/search_more_icon_width"
+        android:layout_height="@dimen/search_more_icon_height"
+        android:layout_centerVertical="true"
+        android:src="@drawable/search_icon2" />
+
+    <TextView
+        android:id="@+id/search_more_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_toRightOf="@id/search_more_search_icon_iv"
+        android:paddingLeft="@dimen/search_more_tv_padding_left"
+        android:textColor="@color/search_top_alpha_color"
+        android:textSize="@dimen/search_top_size" />
+
+</RelativeLayout>

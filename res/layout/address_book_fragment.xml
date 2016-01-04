@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/personal_addfriend_ib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/personal_add_friends" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="通讯录"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/personal_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:layout_marginBottom="53dip">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/personal_homepage_ll"
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:gravity="center_vertical"
+                android:padding="2dip" >
+
+                <ImageView
+                    style="@style/Address_iv"
+                    android:background="@drawable/personal_homepage" />
+
+                <TextView
+                    style="@style/Address_tv"
+                    android:text="个人主页" />
+
+                <ImageView style="@style/Address_point_iv" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dip"
+                android:layout_marginLeft="68dip"
+                android:background="#c7c6c6" />
+
+            <LinearLayout
+                android:id="@+id/personal_famous_ll"
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:gravity="center_vertical"
+                android:padding="2dip" >
+
+                <ImageView
+                    style="@style/Address_iv"
+                    android:background="@drawable/personal_famous" />
+
+                <TextView
+                    style="@style/Address_tv"
+                    android:text="名家" />
+
+                <ImageView style="@style/Address_point_iv" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dip"
+                android:layout_marginLeft="68dip"
+                android:background="#c7c6c6" />
+
+            <LinearLayout
+                android:id="@+id/personal_subscribe_ll"
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:gravity="center_vertical"
+                android:padding="2dip" >
+
+                <ImageView
+                    style="@style/Address_iv"
+                    android:background="@drawable/personal_subscribe" />
+
+                <TextView
+                    style="@style/Address_tv"
+                    android:text="订阅号" />
+
+                <ImageView style="@style/Address_point_iv" />
+            </LinearLayout>
+
+
+            <com.edaoyou.collections.view.ListViewForScrollView
+                android:id="@+id/address_personal_lvScroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </com.edaoyou.collections.view.ListViewForScrollView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

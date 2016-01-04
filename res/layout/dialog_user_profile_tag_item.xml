@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/user_profile_tag_item_tv"
+        android:layout_width="@dimen/user_profile_tag_item_width"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/data_list"
+        android:drawablePadding="@dimen/user_profile_tag_item_drawable_padding"
+        android:textColor="@color/user_profile_bule"
+        android:textSize="@dimen/text_size_five" />
+
+</LinearLayout>

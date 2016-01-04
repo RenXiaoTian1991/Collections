@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="添加好友"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+            <EditText
+                android:layout_marginTop="10dip"
+                android:id="@+id/search_friend_et"
+                android:layout_width="match_parent"
+                android:layout_height="35dip"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edittext_shape"
+                android:drawableLeft="@drawable/ic_search"
+                android:hint="藏友昵称/手机号/邮箱" />
+
+        <TextView
+            android:id="@+id/addfriend_myname_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="12dip"
+            android:layout_marginBottom="15dip"
+            android:text="我的昵称：" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/addfriend_from_phone_ll"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:gravity="center_vertical"
+        android:padding="2dip" >
+
+        <ImageView
+            style="@style/Address_iv"
+            android:background="@drawable/phone1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dip"
+                android:textColor="#5da0fc"
+                android:text="手机通讯录" />
+
+            <TextView
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:text="邀请手机通讯录中的朋友"
+                android:textColor="#868585"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ImageView style="@style/Address_point_iv" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dip"
+        android:layout_marginLeft="68dip"
+        android:background="#c7c6c6" />
+
+    <LinearLayout
+        android:id="@+id/addfriend_from_qq_ll"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:gravity="center_vertical"
+        android:padding="2dip" >
+
+        <ImageView
+            style="@style/Address_iv"
+            android:background="@drawable/qq1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dip"
+                android:textColor="#5da0fc"
+                android:text="QQ好友" />
+
+            <TextView
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:text="邀请qq中的朋友"
+                android:textColor="#868585"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ImageView style="@style/Address_point_iv" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dip"
+        android:layout_marginLeft="68dip"
+        android:background="#c7c6c6" />
+
+    <LinearLayout
+        android:id="@+id/addfriend_from_wx_ll"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:gravity="center_vertical"
+        android:padding="2dip" >
+
+        <ImageView
+            style="@style/Address_iv"
+            android:background="@drawable/wechat1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dip"
+                android:textColor="#5da0fc"
+                android:text="微信联系人" />
+
+            <TextView
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:text="邀请微信中的朋友"
+                android:textColor="#868585"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ImageView style="@style/Address_point_iv" />
+    </LinearLayout>
+
+</LinearLayout>

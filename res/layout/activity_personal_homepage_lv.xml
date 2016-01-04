@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_out"
+    android:orientation="vertical" >
+
+    <com.edaoyou.collections.view.XGridView
+        xmlns:pla="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/home_Xlistview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-40dip"
+        android:fastScrollEnabled="true"
+        android:scrollbars="vertical"
+        pla:plaColumnNumber="2"
+        pla:plaLandscapeColumnNumber="3" />
+
+</RelativeLayout>

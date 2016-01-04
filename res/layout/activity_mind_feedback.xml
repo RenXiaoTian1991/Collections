@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/header_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="意见反馈"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/save_mind_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:padding="10dip"
+            android:text="保存"
+            android:textColor="#1E8732"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edit_mind_et"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/fabu_tianjiamiaoshu_bg"
+        android:gravity="top"
+        android:hint="请您在这里填写您对 “藏品” 的意见,我们将不断改进,感谢支持"
+        android:maxLength="100"
+        android:padding="5dp"
+        android:paddingTop="10dip"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="23dip"
+        android:layout_marginTop="5dip"
+        android:padding="5dp"
+        android:background="@drawable/e_mail"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="7dip"
+            android:gravity="center_vertical"
+            android:text="电子邮件"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/edit_email_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dip"
+            android:background="@null"
+            android:hint="(选填,以便我们回复您)"
+            android:singleLine="true"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="@dimen/search_tag_min_height" >
+
+    <com.edaoyou.collections.view.CirclePortrait
+        android:id="@+id/search_user_icon_iv"
+        android:layout_width="@dimen/search_tag_icon_width"
+        android:layout_height="@dimen/search_tag_icon_height"
+        android:layout_centerVertical="true"
+        android:src="@drawable/search_persion_head" />
+
+    <TextView
+        android:id="@+id/search_user_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/search_user_icon_iv"
+        android:paddingLeft="@dimen/search_user_name_padding_left"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/search_tag_title_size" />
+
+    <View
+        android:id="@+id/search_item_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search_item_line_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/search_top_alpha_color" />
+
+</RelativeLayout>

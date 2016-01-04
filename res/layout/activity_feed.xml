@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <RelativeLayout
+        android:id="@+id/feed_top_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/feed_view_page_hegiht" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/feed_vp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/feed_view_page_hegiht" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/feed_vp_item_layout_marign_top" >
+
+            <TextView
+                android:id="@+id/feed_vp_item_index_tv"
+                android:layout_width="@dimen/feed_vp_item_index_height"
+                android:layout_height="@dimen/feed_vp_item_index_height"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/switch_btn_normal"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_seven" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/feed_vp_item_sum_widht"
+                android:layout_height="@dimen/feed_vp_item_sum_height"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/feed_vp_item_sum_marign_left"
+                android:layout_toRightOf="@id/feed_vp_item_index_tv"
+                android:background="@drawable/particulars_paging2"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/feed_vp_item_sum_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_seven" />
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/feed_share_ib"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/articles_black_share_marign_right"
+                android:background="@drawable/share"
+                android:onClick="click" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/feed_user_marign_top" >
+
+            <com.edaoyou.collections.view.CirclePortrait
+                android:id="@+id/feed_user_icon_iv"
+                android:layout_width="@dimen/feed_user_icon_widht_and_height"
+                android:layout_height="@dimen/feed_user_icon_widht_and_height"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/search_persion_head" />
+
+            <TextView
+                android:id="@+id/feed_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/feed_user_icon_iv"
+                android:layout_marginTop="@dimen/feed_time_marign_top"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_five" />
+
+            <ImageView
+                android:id="@+id/feed_chat_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/feed_chat_marign_top"
+                android:background="@drawable/xiangqing_chat_icon" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.etsy.XListView
+        android:id="@+id/feed_comment_list_lv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/feed_comment_list_height"
+        android:listSelector="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:layout_below="@id/feed_top_rl" />
+
+    <EditText
+        android:id="@+id/feed_publish_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/feed_publish_height"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/feed_publish_marign"
+        android:background="@drawable/edittext_shape"
+        android:hint="@string/feed_publish_hint"
+        android:imeOptions="actionSend"
+        android:inputType="text"
+        android:padding="@dimen/feed_publish_marign" />
+
+</RelativeLayout>

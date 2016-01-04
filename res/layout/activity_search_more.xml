@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/search_more_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip" >
+
+        <Button
+            android:id="@+id/search_more_exit_bt"
+            android:layout_width="10dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/black_ruturn" />
+
+        <EditText
+            android:id="@+id/search_et"
+            android:layout_width="match_parent"
+            android:layout_height="35dip"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@id/search_more_exit_bt"
+            android:background="@drawable/edittext_shape"
+            android:hint="@string/search_et_hint"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:paddingLeft="5dp"
+            android:textSize="@dimen/text_size_five" />
+    </RelativeLayout>
+
+    <com.etsy.XListView
+        android:id="@+id/search_more_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_more_top"
+        android:layout_marginLeft="10dp"
+        android:divider="@android:color/transparent"
+        android:listSelector="@android:color/transparent" >
+    </com.etsy.XListView>
+
+    <TextView
+        android:id="@+id/search_empty_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="@string/search_no_data"
+        android:textColor="@color/search_top_color"
+        android:textSize="@dimen/text_size_six"
+        android:visibility="gone" />
+
+</RelativeLayout>

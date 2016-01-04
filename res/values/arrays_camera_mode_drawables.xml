@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 照相模式 -->
+    <array name="camera_modes">
+        <item>@drawable/camera_modes1</item>
+        <item>@drawable/camera_modes2</item>
+        <item>@drawable/camera_modes3</item>
+        <item>@drawable/camera_modes4</item>
+        <item>@drawable/camera_modes5</item>
+        <item>@drawable/camera_modes6</item>
+        <item>@drawable/camera_modes7</item>
+        <item>@drawable/camera_modes8</item>
+        <item>@drawable/camera_modes9</item>
+    </array>
+
+    <!-- 家具 -->
+    <array name="chairs_drawable">
+        <item>@drawable/chair1</item>
+        <item>@drawable/chair2</item>
+        <item>@drawable/chair3</item>
+        <item>@drawable/chair4</item>
+    </array>
+
+    <!-- 书画 -->
+    <array name="pictures_drawable">
+        <item>@drawable/picture1</item>
+        <item>@drawable/picture2</item>
+        <item>@drawable/picture3</item>
+        <item>@drawable/picture4</item>
+    </array>
+
+    <!-- 陶瓷 -->
+    <array name="chinas_drawable">
+        <item>@drawable/china1</item>
+        <item>@drawable/china2</item>
+        <item>@drawable/china3</item>
+        <item>@drawable/china4</item>
+    </array>
+
+    <!-- 玉石 -->
+    <array name="jades_drawable">
+        <item>@drawable/jade1</item>
+        <item>@drawable/jade2</item>
+        <item>@drawable/jade3</item>
+        <item>@drawable/jade4</item>
+    </array>
+
+    <!-- 钱币 -->
+    <array name="moneys_drawable">
+        <item>@drawable/money1</item>
+        <item>@drawable/money2</item>
+        <item>@drawable/money3</item>
+        <item>@drawable/money4</item>
+    </array>
+
+    <!-- 金铜 -->
+    <array name="golds_drawable">
+        <item>@drawable/gold1</item>
+        <item>@drawable/gold2</item>
+        <item>@drawable/gold3</item>
+        <item>@drawable/gold4</item>
+    </array>
+
+    <!-- 佛像 -->
+    <array name="buddhas_drawable">
+        <item>@drawable/buddha1</item>
+        <item>@drawable/buddha2</item>
+        <item>@drawable/buddha3</item>
+        <item>@drawable/buddha4</item>
+    </array>
+
+    <!-- 珠串 -->
+    <array name="zhuchuans_drawable">
+        <item>@drawable/zhuchuan1</item>
+        <item>@drawable/zhuchuan2</item>
+        <item>@drawable/zhuchuan3</item>
+        <item>@drawable/zhuchuan4</item>
+    </array>
+
+</resources>

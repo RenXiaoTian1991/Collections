@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="@dimen/search_tag_min_height" >
+
+    <RelativeLayout
+        android:id="@+id/search_like_left"
+        android:layout_width="@dimen/search_articles_left_width"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/search_articles_left_paddingt_top" >
+
+        <TextView
+            android:id="@+id/search_like_txt_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/search_tag_title_size" />
+
+        <TextView
+            android:id="@+id/search_like_nick_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/search_like_txt_tv"
+            android:layout_marginTop="@dimen/search_like_nick_marign_top"
+            android:textColor="@color/search_top_color"
+            android:textSize="@dimen/search_top_size" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/search_like_photo_iv"
+        android:layout_width="@dimen/search_articles_photo_width"
+        android:layout_height="@dimen/search_articles_photo_height"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/search_articles_photo_marign_left"
+        android:layout_toRightOf="@id/search_like_left" />
+
+    <View
+        android:id="@+id/search_item_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search_item_line_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/search_top_alpha_color" />
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/publish"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/show_pics"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/black" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/detail_list_item_vp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:persistentDrawingCache="animation" >
+        </android.support.v4.view.ViewPager>
+
+        <com.edaoyou.collections.view.CustomTopbar
+            android:id="@+id/customTopbar"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp" >
+        </com.edaoyou.collections.view.CustomTopbar>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <ExpandableListView
+            android:id="@+id/expandablelistview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:groupIndicator="@null"
+            android:listSelector="#00000000"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/select_label_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/select_label_tv"
+                android:layout_width="0dip"
+                android:layout_height="43dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1.0"
+                android:drawableLeft="@drawable/fabu_biaoqian_icon"
+                android:drawablePadding="10dp"
+                android:ellipsize="marquee"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="@string/select_the_label"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/modify_label_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:text="修改"
+                android:textColor="#ff5DA0FC"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/more_arrow_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/set_more" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#c3c3c3" />
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:listSelector="#00000000" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/publish_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/fabu_button_bg_normal"
+        android:gravity="center"
+        android:enabled="false"
+        android:text="发布"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+</LinearLayout>

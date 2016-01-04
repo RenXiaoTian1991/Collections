@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:padding="10dip"
+                    android:text="@string/setting_user"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/setting_username_ll"
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:layout_margin="2dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/setting_user_name_tv"
+                    android:layout_width="1dip"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="20dip"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:text="@string/setting_username"
+                    android:textSize="16sp" />
+
+                <!-- 圆头像 -->
+
+                <com.edaoyou.collections.view.CircleImageView
+                    android:id="@+id/setting_user_img_iv"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/touxiangbackground" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/set_more" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/setting_mytab_ll"
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:layout_margin="2dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="1dip"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="20dip"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:text="@string/setting_mytab"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/set_more" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dip"
+                android:layout_marginTop="15dip"
+                android:background="#B6B6B6" />
+
+            <LinearLayout
+                android:id="@+id/setting_pushmsg_ll"
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:layout_margin="2dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="1dip"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="20dip"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:text="@string/setting_pushmsg"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/set_more" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/setting_setchat_ll"
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:layout_margin="2dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="1dip"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="20dip"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:text="@string/setting_setchat"
+                    android:textSize="16sp" />
+
+                <com.edaoyou.collections.view.CustomSwitchButton
+                    xmlns:switch="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/setting_setchat_csbnt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dip"
+                    android:layout_margin="10dp"
+                    switch:bmHeight="3000dp"
+                    switch:bmWidth="50dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/setting_savepicture_ll"
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:layout_margin="2dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="1dip"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="20dip"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:text="@string/setting_savepicture"
+                    android:textSize="16sp" />
+
+                <com.edaoyou.collections.view.CustomSwitchButton
+                    xmlns:switch="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/setting_savepicture_csbnt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dip"
+                    android:layout_margin="10dp"
+                    switch:bmHeight="3000dp"
+                    switch:bmWidth="50dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dip"
+                android:layout_marginTop="15dip"
+                android:background="#B6B6B6" />
+
+            <LinearLayout
+                android:id="@+id/setting_aboutcollections_ll"
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:layout_margin="2dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="1dip"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="20dip"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:text="@string/setting_aboutcollections"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/set_more" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/setting_clearcache_ll"
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:layout_margin="2dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="1dip"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="20dip"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:text="@string/setting_clearcache"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/set_more" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/setting_opinionback_ll"
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:layout_margin="2dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="1dip"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="20dip"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:text="@string/setting_opinionback"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/set_more" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/setting_introducetofriends_ll"
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:layout_margin="2dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="1dip"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="20dip"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:text="@string/setting_introducetofriends"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/set_more" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/setting_ptotocol_ll"
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:layout_margin="2dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="1dip"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="20dip"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:text="@string/setting_ptotocol"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/set_more" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/setting_quituser_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/quit_login_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F55B60"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:padding="10dip"
+                    android:text="@string/setting_quituser"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

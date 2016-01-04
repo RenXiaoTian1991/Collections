@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/index_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E2E2E2"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:text="A"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/personal_famous_ll"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:gravity="center_vertical"
+        android:padding="5dip" >
+
+        <com.edaoyou.collections.view.CirclePortrait
+            android:id="@+id/person_header_iv"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="10dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/touxiangbackground" />
+
+        <TextView
+            android:id="@+id/person_name_tv"
+            style="@style/Address_tv"
+            android:layout_marginLeft="5dip"
+            android:text="名家" />
+
+        <ImageButton
+            android:id="@+id/person_attention_ib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/personal_ok" />
+    </LinearLayout>
+
+</LinearLayout>

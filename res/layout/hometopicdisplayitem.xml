@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topic_diaplayitem_rl"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/topic_diaplayitem_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66px"
+        android:text="藏家"
+        android:textColor="#ffffff"
+        android:textSize="34px" />
+
+    <Button
+        android:id="@+id/topic_diaplayitem_bnt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/unfollow_button"
+        android:focusable="false"
+        android:clickable="false"
+        android:text="关注"
+        android:textSize="24px" />
+
+</RelativeLayout>

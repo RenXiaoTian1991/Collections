@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/my_topics_photo_iv"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="@dimen/search_articles_photo_marign_left" />
+
+    <RelativeLayout
+        android:id="@+id/my_topics_rl"
+        android:layout_width="@dimen/search_articles_left_width"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_toRightOf="@id/my_topics_photo_iv"
+        android:paddingTop="@dimen/search_articles_left_paddingt_top" >
+
+        <TextView
+            android:id="@+id/my_topics_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/search_tag_title_size" />
+
+        <TextView
+            android:id="@+id/my_topics_txt_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/my_topics_title_tv"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/search_top_color"
+            android:textSize="@dimen/search_top_size" />
+
+        <TextView
+            android:id="@+id/my_topics_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/my_topics_txt_tv"
+            android:textColor="@color/search_top_color"
+            android:textSize="@dimen/search_top_size" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search_item_line_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/search_top_alpha_color" />
+
+</RelativeLayout>

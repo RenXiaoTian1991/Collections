@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/tag_header_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/feed_view_page_hegiht" >
+
+        <RelativeLayout
+            android:id="@+id/topic_header_center_rl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/viewpager_header_height" >
+
+            <RelativeLayout
+                android:id="@+id/tag_header_top_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/tag_exit_btn_marign_left"
+                android:layout_marginTop="@dimen/tag_exit_btn_marign_left" >
+
+                <Button
+                    android:id="@+id/tag_exit_bt"
+                    android:layout_width="@dimen/tag_exit_btn_widht"
+                    android:layout_height="@dimen/tag_exit_btn_height"
+                    android:background="@drawable/return_btn" />
+
+                <TextView
+                    android:id="@+id/tag_topic_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_three" />
+
+                <RelativeLayout
+                    android:id="@+id/tag_lable_home_add_rl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/tag_lable_home_layout_marign_right" >
+
+                    <ImageView
+                        android:id="@+id/tag_lable_home_add_iv"
+                        android:layout_width="@dimen/tag_lable_home_image_width"
+                        android:layout_height="@dimen/tag_lable_home_image_height"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/label_home_add" />
+
+                    <TextView
+                        android:id="@+id/tag_lable_home_add_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/tag_lable_home_add_iv"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_six" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tag_lable_home_ok_rl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/tag_lable_home_layout_marign_right" >
+
+                    <ImageView
+                        android:id="@+id/tag_lable_home_ok_iv"
+                        android:layout_width="@dimen/tag_lable_home_image_width"
+                        android:layout_height="@dimen/tag_lable_home_image_height"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/label_home_ok" />
+
+                    <TextView
+                        android:id="@+id/tag_lable_home_ok_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/tag_lable_home_ok_iv"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_six" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tag_header_center_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" >
+
+                <ImageView
+                    android:id="@+id/tag_avatar_iv"
+                    android:layout_width="@dimen/tag_avatar_image_width"
+                    android:layout_height="@dimen/tag_avatar_image_height"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/tag_topic_txt_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tag_avatar_iv"
+                    android:layout_margin="@dimen/tag_topic_txt_marign"
+                    android:gravity="center_horizontal"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_six" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <com.edaoyou.collections.topic.PagerSlidingTabStrip
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tabs_height"
+            android:layout_alignParentBottom="true" />
+
+        <LinearLayout
+            android:id="@+id/tag_user_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tabs"
+            android:layout_marginBottom="@dimen/tag_user_layout_marign_bottom"
+            android:layout_marginLeft="@dimen/tag_user_layout_marign_left"
+            android:orientation="horizontal" />
+
+        <TextSwitcher
+            android:id="@+id/tag_header_like_count_ts"
+            android:layout_width="@dimen/tag_user_item_width"
+            android:layout_height="@dimen/tag_user_item_height"
+            android:layout_above="@id/tabs"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/tag_user_layout_marign_bottom"
+            android:layout_marginRight="@dimen/tag_like_count_marign_right"
+            android:background="@drawable/linlang_like_bg" />
+    </RelativeLayout>
+
+</merge>

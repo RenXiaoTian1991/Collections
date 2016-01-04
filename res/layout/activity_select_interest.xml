@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/select_interest_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dip" >
+
+        <TextView
+            android:id="@+id/select_interest_size_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="选择兴趣" />
+
+        <TextView
+            android:id="@+id/select_interest_finish_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="完成" />
+    </RelativeLayout>
+
+    <com.etsy.XListView
+        android:id="@+id/select_interest_Xlistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/select_interest_rl"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000"
+        android:listSelector="#00000000"
+        android:scrollbars="none" />
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fast_regiester_bg" >
+
+    <TextView
+        android:id="@+id/fast_regiester_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="310dip"
+        android:text="@string/fast_regiester1"
+        android:textColor="@color/white"
+        android:textSize="19sp" />
+
+    <View
+        android:id="@+id/fast_regiester_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@id/fast_regiester_tv"
+        android:layout_marginBottom="15dip"
+        android:layout_marginTop="10dip"
+        android:background="@color/white" />
+
+    <Button
+        android:id="@+id/fast_regiester_email"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fast_regiester_line"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/fast_regiester_email"
+        android:gravity="center"
+        android:text="@string/fast_regiester2"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/fast_regiester_qq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/fast_regiester_email"
+        android:layout_below="@id/fast_regiester_email"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/fast_regiester_qq"
+        android:gravity="center_vertical"
+        android:paddingLeft="45dip"
+        android:text="QQ号码登录"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/fast_regiester_weibo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/fast_regiester_email"
+        android:layout_below="@id/fast_regiester_email"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/fast_regiester_weibo"
+        android:gravity="center_vertical"
+        android:paddingLeft="43dip"
+        android:text="微博账号登录"
+        android:textColor="@color/white"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/login_now_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fast_regiester_weibo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dip"
+        android:text="已有藏家账号？立刻登录"
+        android:textColor="@color/white"
+        android:textSize="13sp" />
+
+</RelativeLayout>

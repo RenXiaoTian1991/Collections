@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fillet="http://schemas.android.com/apk/res/com.edaoyou.collections"
+    android:id="@+id/home_xgirdview_item_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/like_item_border"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/home_jingxuan1"
+            android:layout_gravity="center_horizontal" >
+
+            <com.edaoyou.collections.view.FilletLayout
+                android:id="@+id/home_choiceness_thing_iv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/default_290_290_bg"
+                fillet:draw_left_down="false"
+                fillet:draw_right_down="false"
+                fillet:fillet_height="5dp"
+                fillet:fillet_width="5dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/homepage_photo_cover"
+                android:scaleType="fitEnd" />
+
+            <com.edaoyou.collections.view.CustomImageButton
+                android:id="@+id/home_choiceness_totality_customIB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp" >
+            </com.edaoyou.collections.view.CustomImageButton>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/home_thing_feed_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="5"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:text="从造型看古砚的工艺艺术价值" />
+
+        <TextView
+            android:id="@+id/sp_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#c3c3c3" />
+
+        <LinearLayout
+            android:id="@+id/home_jingxuan_listviewitem_persondiscription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="3dip"
+            android:paddingTop="3dip"
+            android:weightSum="4" >
+
+            <com.edaoyou.collections.view.CirclePortrait
+                android:id="@+id/home_person_head_iv"
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/touxiangbackground" />
+
+            <LinearLayout
+                android:id="@+id/home_choiceness_detail_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/home_personnick_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="bottom"
+                    android:singleLine="true"
+                    android:text="爱文玩的姑娘"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/homepage_tag_icon" />
+
+                    <TextView
+                        android:id="@+id/home_thingtopic_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="金石馆"
+                        android:textColor="#aa0000ff"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/home_choiceness_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="精选"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

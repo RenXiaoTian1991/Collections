@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fillet="http://schemas.android.com/apk/res/com.edaoyou.collections"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.edaoyou.collections.view.FilletLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        fillet:fillet_height="@dimen/search_chat_hint_fille_height"
+        fillet:fillet_width="@dimen/search_chat_hint_fille_width" >
+
+        <TextView
+            android:id="@+id/chat_hint_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/chat_hint_title_marign_top"
+            android:text="@string/chat_hint_title"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_three"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/chat_hint_txt_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chat_hint_title_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/chat_hint_title_marign_top"
+            android:textColor="@android:color/black" />
+
+        <View
+            android:id="@+id/search_item_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/search_item_line_height"
+            android:layout_below="@id/chat_hint_txt_tv"
+            android:background="@color/search_top_alpha_color" />
+
+        <Button
+            android:id="@+id/chat_hint_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/search_item_line"
+            android:background="@android:color/transparent"
+            android:text="@string/chat_hint_btn"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="@dimen/text_size_three"
+            android:textStyle="bold" />
+    </com.edaoyou.collections.view.FilletLayout>
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="@dimen/search_tag_min_height"
+    android:paddingLeft="@dimen/feed_comment_item_padding_left" >
+
+    <com.edaoyou.collections.view.CirclePortrait
+        android:id="@+id/feed_user_icon_iv"
+        android:layout_width="@dimen/search_tag_icon_width"
+        android:layout_height="@dimen/search_tag_icon_height"
+        android:layout_centerVertical="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/feed_user_icon_iv"
+        android:paddingLeft="@dimen/search_tag_right_padding_left" >
+
+        <TextView
+            android:id="@+id/feed_user_nick_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/search_tag_txt_padding_top"
+            android:textColor="@color/feed_bule"
+            android:textSize="@dimen/search_tag_title_size" />
+
+        <TextView
+            android:id="@+id/feed_comment_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/feed_comment_item_tv_marign_top"
+            android:layout_marginRight="@dimen/feed_comment_item_tv_marign_right"
+            android:textSize="@dimen/search_top_size" />
+
+        <TextView
+            android:id="@+id/feed_comment_txt_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/feed_user_nick_tv"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/search_top_size" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/feed_item_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search_item_line_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/search_top_alpha_color" />
+
+</RelativeLayout>

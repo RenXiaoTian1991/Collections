@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_and_regiester_bg" >
+
+    <ImageView
+        android:id="@+id/logo_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dip"
+        android:background="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/logo_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo_iv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip"
+        android:text="最大的收藏者交流平台"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/login_bt"
+        android:layout_width="260dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dip"
+        android:background="@drawable/login_bt_select"
+        android:gravity="center"
+        android:paddingBottom="8dip"
+        android:paddingTop="8dip"
+        android:text="登录"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/regiester_bt"
+        android:layout_width="260dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_bt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/regiester_bt_select"
+        android:gravity="center"
+        android:paddingBottom="8dip"
+        android:paddingTop="8dip"
+        android:text="注册"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/other_login_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/regiester_bt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dip"
+        android:text="选择其他方式登录"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:id="@+id/free_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:padding="23dip" >
+
+        <TextView
+            android:id="@+id/free_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="随便逛逛"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.edaoyou.collections.view.FloatingActionButton
+            android:id="@+id/other_login_weixin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="200dp"
+            android:background="@drawable/other_login_weixin_select"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="微信登录"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <com.edaoyou.collections.view.FloatingActionButton
+            android:id="@+id/other_login_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="150dp"
+            android:background="@drawable/other_login_qq_select"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="QQ登录"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <com.edaoyou.collections.view.FloatingActionButton
+            android:id="@+id/other_login_weibo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/other_login_weibo_select"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="微博登录"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
